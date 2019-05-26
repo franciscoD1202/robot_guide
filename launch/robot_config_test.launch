@@ -1,0 +1,19 @@
+<launch>
+
+    <!-- Launch Rosaria & Rviz nodes-->
+
+    <include file="$(find robot_control)/launch/p3dx_rosaria_rviz.launch"/>
+
+    <!-- Map server -->
+
+    <node name="map_server" pkg="map_server" type="map_server" args="/home/francisco/catkin_ws/src/robot_control/maps/Map_S1_Test.yaml"/>
+    
+    <!-- AMCL package-->
+
+    <include file="$(find robot_control)/launch/p3dx_amcl.launch"/>
+
+    <!-- Move node (Navigation Stack) -->
+
+    <include file="$(find robot_control)/launch/p3dx_move_base.launch"/>
+
+</launch>

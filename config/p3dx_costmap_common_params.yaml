@@ -1,0 +1,17 @@
+obstacle_range: 4.0
+raytrace_range: 3.0
+
+map_type: costmap
+
+robot_radius: 0.267
+inflation_radius: 0.15
+
+max_obstacle_height: 1.5
+min_obstacle_height: 0.0
+
+transform_tolerance: 0.1
+
+observation_sources: laser_scan sonar
+
+laser_scan: {sensor_frame: /laser_frame,  data_type: LaserScan,  topic: /RosAria/urg_1_laserscan, marking: true , clearing: true, expected_update_rate: 0.2}
+sonar: {data_type: PointCloud, topic: /RosAria/sonar, marking: true, clearing: false, min_obstacle_height: 0.0, max_obstacle_height: 0.20}
