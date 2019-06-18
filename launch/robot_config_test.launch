@@ -5,8 +5,10 @@
     <include file="$(find robot_control)/launch/p3dx_rosaria_rviz.launch"/>
 
     <!-- Map server -->
+    
+    <!-- Change the args param for the direction of instalation of the package-->
 
-    <node name="map_server" pkg="map_server" type="map_server" args="/home/francisco/catkin_ws/src/robot_control/maps/Map_S1_Test.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="/home/francisco/catkin_ws/src/robot_guide/maps/Map_S1_Test.yaml"/>
     
     <!-- AMCL package-->
 
