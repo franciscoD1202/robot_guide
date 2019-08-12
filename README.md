@@ -6,6 +6,8 @@ This ROS repository allows the creation of a map via teleoperation and autonomou
 
 You must have ROS Kinetic installed and the RosAria package, available on Ubuntu 16.04. 
 
+You must install the most recent version of ROS kinetic and follow the tutorial to install *_ROSARIA_*  available [here](https://wiki.ros.org/ROSARIA/Tutorials/How%20to%20use%20ROSARIA).
+
 In case of not finding the [**libraria**](libaria_2.9.4+ubuntu16_amd64.deb) installer, it is available in this repository.
 
 ## Installing
